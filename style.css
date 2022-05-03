@@ -143,9 +143,10 @@ body {
 }
 
 .contentSection {
-    flex-grow: 4;
+    flex-grow: 2;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .logoSection {

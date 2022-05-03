@@ -6,3 +6,6 @@ Project Tips:
 4. The inputs, by default have a very bright border (#E5E7EB), but we've included 2 variations. For starters, the password inputs should be given an error class.
 5. The other variation is the selected input, which should have a blue border and subtle box-shadow. This can be done with the :focus pseudo-class you've learned about in an earlier lesson. 
 6. Do not worry about making your project look nice on mobile, but DO resize your browser a little bit to make sure that it's not completely broken at different desktop resolutions. 
+
+HTML Forms: https://developer.mozilla.org/en-US/docs/Learn/Forms
+HTML Tables: https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables

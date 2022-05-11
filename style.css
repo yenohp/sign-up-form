@@ -168,7 +168,7 @@ body {
 
 img {
     min-width: 4rem;
-    max-width: 5rem;
+    max-width: 4.5rem;
     height: auto;
 }
 
@@ -182,7 +182,52 @@ img {
     background-size: cover;
 }
 
-.section-right {}
+.footer {
+    position: relative;
+    bottom: -500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer a {
+    color: white;
+}
+
+.section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 2%;
+}
+
+.description {
+    width: 80%;
+    height: auto;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+}
 
 @font-face {
     font-family: 'Norse-Bold';

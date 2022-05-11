@@ -17,15 +17,54 @@
                     <img src="./imgs/odin-lined.png" alt="Odin Project">
                     <p class="logo-text">ODIN</p>
                 </div>
+                <div class="footer">
+                    <p>Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
+                </div>
             </div>
         </div>
         <div class="section-right">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize
-                your deepest dreams. Sign up now to get started
+            <div class="description">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize
+                    your deepest dreams. Sign up now to get started
 
-                <hr>
-                <span>You know you want to.</span>
-            </p>
+                    <br>
+
+                    <span>You know you want to.</span>
+                </p>
+            </div>
+            <form action="#">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <div class="container">
+                        <label for="firstName">First Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="container">
+                        <label for="lastName">Last Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="container">
+                        <label for="email">Email</label>
+                        <input type="email">
+                    </div>
+                    <div class="container">
+                        <label for="phone">Phone Number</label>
+                        <input type="number"> <!-- REGEX-->
+                    </div>
+                    <div class="container">
+                        <label for="pass">Password</label>
+                        <input type="password">
+                    </div>
+                    <div class="container">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password">
+                    </div>
+                </fieldset>
+
+                <button id="createAccount" type="submit">Create Account</button>
+            </form>
+            <p class="login">Already have an account? <a href="#">Log In</a></p>
         </div>
     </body>
 

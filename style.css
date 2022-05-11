@@ -167,8 +167,9 @@ body {
 }
 
 img {
-    width: 10vw;
-    height: 80%;
+    min-width: 4rem;
+    max-width: 5rem;
+    height: auto;
 }
 
 .background-image {

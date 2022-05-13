@@ -198,7 +198,10 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10% 0%;
+    padding: 5% 0% 8% 0%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 form {
@@ -208,6 +211,14 @@ form {
 .description {
     width: 80%;
     height: auto;
+    font-size: 24px;
+    align-self: flex-start;
+    padding-left: 20px;
+    margin-bottom: 75px;
+}
+
+.description span {
+    font-style: italic;
 }
 
 fieldset {
@@ -221,11 +232,13 @@ fieldset {
 
 legend {
     padding-bottom: 10px;
+    font-size: 24px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    font-size: 12px;
 }
 
 .form-section {
@@ -233,15 +246,37 @@ legend {
     flex-wrap: wrap;
     width: 100%;
     box-shadow: 0px 4px 10px black;
+    margin-bottom: 40px;
 }
 
 button {
     background-color: #596D48;
     color: white;
-    width: 15rem;
+    width: 12rem;
     height: 2rem;
     border-radius: 5px;
     border: none;
+}
+
+#createAccount,
+.login {
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+#createAccount {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.login {
+    font-weight: 500;
+}
+
+.login a {
+    color: #596D48;
+    text-decoration: none;
 }
 
 @font-face {

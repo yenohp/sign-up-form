@@ -264,6 +264,10 @@ button {
     border: none;
 }
 
+button:active {
+    background-color: #6d8657;
+}
+
 #createAccount,
 .login {
     align-self: flex-start;

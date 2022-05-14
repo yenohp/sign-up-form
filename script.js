@@ -1,6 +1,5 @@
 const inputs = Array.from(document.querySelectorAll('input'));
 const containers = Array.from(document.querySelectorAll('.container'));
-const button = document.querySelector('button');
 const warningGeneral = document.createElement('p');
 const warningPassword = document.createElement('p');
 
@@ -23,6 +22,8 @@ for (input of inputs) {
             password = e.target.value;
         } else if (e.target.previousElementSibling.innerText.toLowerCase() == 'confirm password') {
             confirmPass = e.target.value;
+        } else {
+            removeWarnings();
         }
     })
     input.addEventListener('focusout', (e) => {
@@ -41,19 +42,12 @@ for (input of inputs) {
             e.target.parentElement.append(warningPassword);
         } else if (password == confirmPass) {
             removePassWarnings();
-        } else {
-            removeWarnings();
         }
     });
 }
 
-button.addEventListener('click', (e) => {
-    //  change color
-    console.log('click');
-})
-
 const removePassWarnings = function () {
-    for (container of containers) {
+    for (let container of containers) {
         if (container.lastChild.id == 'pass') {
             container.lastChild.remove();
         }
@@ -61,7 +55,8 @@ const removePassWarnings = function () {
 }
 
 const removeWarnings = function () {
-    for (container of containers) {
-        container.lastChild.remove();
+    for (let container of containers) {
+        if (container.lastChild.className == 'warning')
+            container.lastChild.remove();
     }
 }

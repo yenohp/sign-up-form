@@ -56,7 +56,11 @@ const removePassWarnings = function () {
 
 const removeWarnings = function () {
     for (let container of containers) {
-        if (container.lastChild.className == 'warning')
+        if (container.lastChild.className == 'warning') {
             container.lastChild.remove();
+        }
+        if (container.childElementCount == 2) {
+            container.lastElementChild.style.boxShadow = '';
+        }
     }
 }
